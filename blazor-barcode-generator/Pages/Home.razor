@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+Barcodes based on user input.
+<SfBarcodeGenerator Width="200px" Height="150px" Type="@BarcodeType.Codabar" Value=@value></SfBarcodeGenerator>
+<SfQRCodeGenerator Width="200px" Height="150px" Value=@value></SfQRCodeGenerator>
+<SfDataMatrixGenerator Width="200" Height="150" Value=@value></SfDataMatrixGenerator>
+
+
+<input placeholder="Enter your text" @onchange="@onChange" />
+
+@code {
+
+    private string value { get; set; } = "00";
+    private void onChange(Microsoft.AspNetCore.Components.ChangeEventArgs args)
+    {
+        value = (string)args.Value;
+    }
+}
