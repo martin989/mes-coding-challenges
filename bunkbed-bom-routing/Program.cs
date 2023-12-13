@@ -38,8 +38,8 @@ List<bunkbed_bom_BOM> GetBOMRecursively(List<bunkbed_bom_BOM> bom)
 {
     foreach (bunkbed_bom_BOM item in bom)
     {
-        if (item.BOM.Count > 0){GetBOMRecursively(item.BOM);}
-        AddandRemoveFromDictionary(item.Description, item.Quantity, item.Step);
+        if (item.BOM.Count > 0) { GetBOMRecursively(item.BOM); }
+        if (item.Source == "Provided") { AddandRemoveFromDictionary(item.Description, item.Quantity, item.Step); };
         taktTimeTotal = taktTimeTotal + Helpers.GetTaktTime(item.Step, dictTaktTime);
     }
     return new List<bunkbed_bom_BOM>();
@@ -47,9 +47,9 @@ List<bunkbed_bom_BOM> GetBOMRecursively(List<bunkbed_bom_BOM> bom)
 
 void AddandRemoveFromDictionary(string desc, int value, int step)
 {
-    if (dictComponents.ContainsKey(desc)){dictComponents[desc] += value;}
-    else{dictComponents.Add(desc, value);}
-    if (dictComponentsSteps.ContainsKey(step)){dictComponentsSteps.Remove(step);}
+    if (dictComponents.ContainsKey(desc)) { dictComponents[desc] += value; }
+    else { dictComponents.Add(desc, value); }
+    if (dictComponentsSteps.ContainsKey(step)) { dictComponentsSteps.Remove(step); }
 }
 
 
