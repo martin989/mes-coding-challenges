@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blazor-barcode-generator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8232a251dcb37388a0d7d5f64b2458b338c0664a")]
 [assembly: System.Reflection.AssemblyProductAttribute("blazor-barcode-generator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blazor-barcode-generator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

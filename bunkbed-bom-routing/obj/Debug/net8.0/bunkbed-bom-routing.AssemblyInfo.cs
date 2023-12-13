@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bunkbed-bom-routing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29dd2f9190de59ff83a86d22fea382322b2546bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("bunkbed-bom-routing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bunkbed-bom-routing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
